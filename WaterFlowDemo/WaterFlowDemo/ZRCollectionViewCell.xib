@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZRCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="101" height="140"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-Dm-Xte">
+                        <rect key="frame" x="0.0" y="0.0" width="101" height="140"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-mO-cU8">
+                        <rect key="frame" x="0.0" y="110" width="101" height="30"/>
+                        <color key="backgroundColor" white="0.55281147203947367" alpha="0.53982791385135132" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dSV-Ug-El0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XPl-Dm-Xte" secondAttribute="bottom" id="RQj-M6-CRV"/>
+                <constraint firstAttribute="bottom" secondItem="lLa-mO-cU8" secondAttribute="bottom" id="UAa-Zj-xe6"/>
+                <constraint firstItem="XPl-Dm-Xte" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="atF-51-QsL"/>
+                <constraint firstItem="XPl-Dm-Xte" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j8B-V1-fce"/>
+                <constraint firstItem="lLa-mO-cU8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lJw-Jt-TNt"/>
+                <constraint firstAttribute="trailing" secondItem="XPl-Dm-Xte" secondAttribute="trailing" id="lMM-1y-YpP"/>
+                <constraint firstAttribute="trailing" secondItem="lLa-mO-cU8" secondAttribute="trailing" id="t8i-HW-SgC"/>
+            </constraints>
+            <size key="customSize" width="101" height="140"/>
+            <connections>
+                <outlet property="theImageView" destination="XPl-Dm-Xte" id="ETs-An-Cep"/>
+                <outlet property="theLabel" destination="lLa-mO-cU8" id="dky-XB-Jzo"/>
+            </connections>
+            <point key="canvasLocation" x="342.5" y="244"/>
+        </collectionViewCell>
+    </objects>
+</document>
