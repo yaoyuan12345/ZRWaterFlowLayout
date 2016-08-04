@@ -123,16 +123,18 @@ static NSString *cellId = @"Identifier";
     return collectionCell;
 }
 
-#pragma mark  ZRWaterFlowLayoutDelegate
+#pragma mark  ZRWaterFlowLayoutDelegate  ---瀑布流的委托方法
+
+//   返回itme的高度
 - (NSInteger)zrWaterFlowLayout:(ZRWaterFlowLayout *)waterFlowLayout heightRowOfIndex:(NSInteger)index withItemWidth:(CGFloat )width
 {
     ////    model.w  model.h
     ////    w     h
-    
     ZRShopModel *model = [self.theShopArry objectAtIndex:index];
     return model.h*width/model.w;
-    
 }
+
+//   瀑布流的列数
 - (CGFloat)columnCountInWaterFlowLayout:(ZRWaterFlowLayout *)waterFlowLayout
 {
     return 2;
